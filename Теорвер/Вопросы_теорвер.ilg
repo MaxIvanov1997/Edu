@@ -1,0 +1,79 @@
+This is makeindex, version 2.15 [MiKTeX 2.9] (kpathsea + Thai support).
+Scanning input file Вопросы_теорвер...
+!! Input index error (file = Вопросы_теорвер, line = 1):
+   -- Unknown index keyword \documentclass[11pt].
+!! Input index error (file = Вопросы_теорвер, line = 3):
+   -- Unknown index keyword \usepackage[cp1251].
+!! Input index error (file = Вопросы_теорвер, line = 4):
+   -- Unknown index keyword \usepackage[russian].
+!! Input index error (file = Вопросы_теорвер, line = 5):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = Вопросы_теорвер, line = 6):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = Вопросы_теорвер, line = 7):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = Вопросы_теорвер, line = 8):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = Вопросы_теорвер, line = 11):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Вопросы_теорвер, line = 12):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Вопросы_теорвер, line = 13):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Вопросы_теорвер, line = 15):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Вопросы_теорвер, line = 16):
+   -- Unknown index keyword \def\@makechapterhead#1.
+!! Input index error (file = Вопросы_теорвер, line = 17):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Вопросы_теорвер, line = 18):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Вопросы_теорвер, line = 19):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Вопросы_теорвер, line = 21):
+   -- Unknown index keyword \newtheorem*.
+!! Input index error (file = Вопросы_теорвер, line = 22):
+   -- Unknown index keyword \newtheorem*.
+!! Input index error (file = Вопросы_теорвер, line = 23):
+   -- Unknown index keyword \newtheorem*.
+!! Input index error (file = Вопросы_теорвер, line = 24):
+   -- Unknown index keyword \newtheorem*.
+!! Input index error (file = Вопросы_теорвер, line = 25):
+   -- Unknown index keyword \newtheorem*.
+!! Input index error (file = Вопросы_теорвер, line = 26):
+   -- Unknown index keyword \newtheorem.
+!! Input index error (file = Вопросы_теорвер, line = 27):
+   -- Unknown index keyword \newtheorem*.
+!! Input index error (file = Вопросы_теорвер, line = 28):
+   -- Unknown index keyword \newtheorem*.
+!! Input index error (file = Вопросы_теорвер, line = 29):
+   -- Unknown index keyword \newtheorem*.
+!! Input index error (file = Вопросы_теорвер, line = 30):
+   -- Unknown index keyword \newtheorem*.
+!! Input index error (file = Вопросы_теорвер, line = 32):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Вопросы_теорвер, line = 33):
+   -- Unknown index keyword \title.
+!! Input index error (file = Вопросы_теорвер, line = 34):
+   -- Unknown index keyword \author.
+!! Input index error (file = Вопросы_теорвер, line = 35):
+   -- Unknown index keyword \date.
+!! Input index error (file = Вопросы_теорвер, line = 36):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Вопросы_теорвер, line = 37):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Вопросы_теорвер, line = 38):
+   -- Unknown index keyword \chapter.
+!! Input index error (file = Вопросы_теорвер, line = 39):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Вопросы_теорвер, line = 40):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Вопросы_теорвер, line = 41):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Вопросы_теорвер, line = 42):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Вопросы_теорвер, line = 45):
+   -- Unknown index keyword \end.
+done (0 entries accepted, 37 rejected).
+Nothing written in Вопросы_теорвер.ind.
+Transcript written in Вопросы_теорвер.ilg.

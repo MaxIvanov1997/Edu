@@ -1,0 +1,47 @@
+\documentclass[11pt]{report}
+
+\usepackage[cp1251]{inputenc} % указать кодировку русского текста
+\usepackage[russian]{babel} % указать, что язык текста - русский
+\usepackage{amsmath} % указать, что язык текста - русский
+\usepackage{amsthm}
+\usepackage{amsfonts,amssymb}
+\usepackage{graphicx}
+
+
+\hoffset -10mm
+\voffset -7mm
+\let\rom=\textup
+
+\makeatletter
+\def\@makechapterhead#1{%
+    {\normalfont
+\bfseries\par\nobreak\vskip 10\p@}}
+\makeatother
+
+\newtheorem*{theorem}{ Теорема}
+\newtheorem*{proposition}{Предложение}
+\newtheorem*{lemma}{Лемма}
+\newtheorem*{corollary}{Следствие}
+\newtheorem*{definition}{Определение}
+\newtheorem{qst}{Вопрос}
+\newtheorem*{task}{Задача}
+\newtheorem*{notation}{Обозначения}
+\newtheorem*{remark}{Замечание}
+\newtheorem*{example}{Пример}
+
+\begin{document}
+\title {Вопросы для проверки, ТФКП}
+\author{Абросимов Николай Владимирович} %\thanks{Место для мыла}
+\date{2017}
+\maketitle
+\noindent
+\chapter{}
+\begin{qst} Теорема Тейлора. \end{qst}
+\begin{qst} Неравенство Коши. \end{qst}
+\begin{qst} Теорема Лиувилля. \end{qst}
+\begin{qst} Внутренняя теорема о единственности. \end{qst}
+\begin{qst} Теорема о среднем. \end{qst}
+\begin{qst} Принцип максимума $\|f\|$. \end{qst}
+
+
+\end{document} 

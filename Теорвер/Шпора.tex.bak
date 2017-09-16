@@ -1,0 +1,155 @@
+\documentclass[11pt]{report}
+
+\usepackage[cp1251]{inputenc} % указать кодировку русского текста
+\usepackage[russian]{babel} % указать, что язык текста - русский
+\usepackage{amsmath} % указать, что язык текста - русский
+\usepackage{amsthm}
+\usepackage{amsfonts,amssymb}
+\usepackage{graphicx}
+
+
+\hoffset -10mm
+\voffset -7mm
+\let\rom=\textup
+
+\makeatletter
+\def\@makechapterhead#1{%
+    {\normalfont
+\bfseries\par\nobreak\vskip 10\p@}}
+\makeatother
+
+\newtheorem{theorem}{ Теорема}
+\newtheorem{proposition}{Предложение}
+\newtheorem{lemma}{Лемма}
+\newtheorem{corollary}{Следствие}
+\newtheorem{definition}{Определение}
+
+\newtheorem*{notation}{Обозначения}
+\newtheorem*{remark}{Замечание}
+\newtheorem*{example}{Пример}
+
+\begin{document}
+\title {Конспект лекций по дифференциальной геометрии, 2 семестр}
+\author{Веснин Андрей Юрьевич} %\thanks{Место для мыла}
+\date{2017}
+\maketitle
+\chapter{}
+\section{Теория кривых}
+\noindent
+$x, y \in \mathbb{R}^n\\
+\varrho(x,y) = \sqrt {(x_1 - y_1)^2 + ... + (x_n + y_n)^2}$ - расстояние.\\
+Скалярное произведение $(x,y) = x_1 y_1+...x_n y_n$
+\begin{definition} Пусть $I \subset \mathbb{R}$. Вектор-функцией r(t) назовем отображение $r:I \rightarrow \mathbb{R}^n$\\
+$r(t) =(x_1(t), ... ,x_n(t))$\\
+Производная $r(t), M_0 = r(t_0). r'(t_0) = \lim \limits_{\Delta t \rightarrow 0} \dfrac{r(t_0 + \Delta t) - r(t_0)}{\Delta t}$
+\end{definition}
+\begin{definition} Параметризованной кривой в $\mathbb{R}^3$ называется $r: I \rightarrow \mathbb{R}^3$\\
+$r(t) = (x(t), y(t), z(t))$ t - параметр кривой.\\
+Образ кривой называется траекторией.
+\end{definition}
+\begin{definition} Кривая r(t) называется простой, если из $t_1 \neq t_2 \Rightarrow r(t_1) \neq r(t_2)$
+\end{definition}
+\begin{definition} Кривая r(t) называется гладкой, если отображение $r: I \rightarrow \mathbb{R}^3$ является гладким.
+\end{definition}
+\begin{definition} Гладкая кривая r(t) называется регулярной, если $r'(t) \neq 0$
+\end{definition}
+\begin{definition} Пусть r и $\varrho$ - регулярные кривые.\\
+Кривые называются эквивалентными, если существует гладкое взаимно-однозначное отображение $\varphi$, такое, что $r(t) = \varrho$\\
+$\varphi$ - замена переменной.
+\end{definition}
+\subsection{Способы задания кривой}
+1) Параметрически r(t) = (x(t), y(t), z(t))\\
+2) Неявное $\begin{cases}
+            F(x,y,z) = 0\\
+            \Phi(x,y,z) = 0
+            \end{cases}$
+            (Пересечение 2-x поверхностей)
+\begin{definition} Точка $M_0$ на кривой, заданной неявно называется неособой,
+ если rank$\left(
+                                  \begin{array}{ccc}
+                                  F_x'&F_y'&F_z' \\
+                                  \Phi_x'&\Phi_y'&\Phi_z' \\
+                                  \end{array}
+                                \right) = 2$\\
+\end{definition}
+\begin{proposition} Пусть C - множество точек в $\mathbb{R}^3$ заданное системой уравнений\\
+$\begin{cases}
+F(x,y,z) = 0\\
+\Phi (x,y,z) = 0\\
+\end{cases}$\\
+Где $F, \Phi$ - гладкие функции. Пусть $M_0 \in C$ - неособая. тогда в окрестности точки $M_0$ множество C может быть задано регулярной вектор-функцией.
+\begin{proof}
+$M_0$ - неособая. Пусть rank$\left(
+                                  \begin{array}{cc}
+                                  F_y'&F_z'\\
+                                  \Phi_y'&\Phi_z' \\
+                                  \end{array}
+                                \right) = 2$\\
+По теореме о неявной функции $\begin{cases}
+y =\varphi(x)\\
+z = \psi (x)\\
+\end{cases}$\\
+Положим t = x, тогда: $\begin{cases}
+x = t\\
+y =\varphi(t)\\
+z = \psi (t)\\
+\end{cases}$\\
+r(t) = (x(t),y(t),z(t))\\
+$r'(t_0) = (1, \phi'(t_0), \psi'(t_0)) \neq 0 \Rightarrow$ гладкая регулярная кривая.
+\end{proof}
+\end{proposition}
+\begin{definition} Пусть F(x,y,z) -функция, $M_0$ точка из её области определения.\\
+Градиентом функции в точке $M_0$ называется вектор $(F'_x, F'_y, F'_z) = \nabla F(M_0)$.
+\begin{remark}
+$M_0$ - неособая для $\begin{cases}
+            F(x,y,z) = 0\\
+            \Phi(x,y,z) = 0
+            \end{cases}\\
+            \Leftrightarrow \nabla F(M_0) \times \nabla \Phi(M_0) \neq 0$.
+\end{remark}
+\end{definition}
+\subsection{Касательная прямая}
+\begin{definition} Пусть $M_0$, M - точки на кривой r(t). Прямая $(M_0,M)$ называется секущей.\\
+Предельное положение секущей $(M_0,M)$ при $M \rightarrow M_0$ называется касательной к кривой r(t) в точке $M_0$.
+\end{definition}
+\begin{theorem} О геометрическом смысле производного вектора\\
+$M_0 = r(t_0)$.
+Тогда вектор $r'(t_0)$ является направляющим для касательной прямой r(t)  в точке $M_0$
+\begin{proof}
+$\Delta r = r(t_0 + \Delta t) - r(t_0)$ - направляющий вектор для секущей.
+$\lim \limits_{\Delta t \rightarrow 0} \dfrac{\Delta r}{\Delta t}$ - направляющий вектор для касательной.
+\end{proof}
+\end{theorem}
+\begin{corollary} Уравнение касательной.\\
+$M_0 = r(t_0) = (x_0, y_0, z_0)\\
+r'(t_0) = (x_0', y_0', z_0')$\\
+$\dfrac{x-x_0}{x_0'} = \dfrac{y-y_0}{y_0'} = \dfrac{z-z_0}{z_0'}$
+\end{corollary}
+\begin{proposition} Пусть $M_0$ - неособая, кривая задана неявно, тогда направляющий вектор касательной - $\nabla F(M_0) \times \nabla \Phi(M_0)$
+\begin{proof}
+$M_0$ - неособая, то в её окрестности есть регулярная параметризация, т.е. $r(t) = (x(t), y(t), z(t))$.\\
+$\begin{cases}
+F_x'x' + F_y'y' + F_z'z' = 0\\
+\Phi_x'x' + \Phi_y'y' + \Phi_z'z' = 0
+\end{cases}$
+$\Rightarrow F\bot r'$ и $\Phi \bot r' \Rightarrow r' = \nabla F(M_0) \times \nabla \Phi(M_0)$
+\end{proof}
+\end{proposition}
+\subsection{Нормаль и нормальная плоскость}
+\begin{definition} Нормаль в точке $M_0$ - прямая, проходящая через эту точку и ортогональная вектору касательной.\\
+Нормальная плоскость - плоскость, проходящая через эту точку и ортогональная вектору касательной.\\
+Уравнение нормальной плоскости имеет вид\\
+$x_0'(x-x_0) + y_0'(y-y_0) + z_0'(z-z_0) = 0$\\
+Если $(\alpha, \beta, \gamma) = \nabla F(M_0) \times \nabla \Phi(M_0)$, то уравнение плоскости можно представить в виде:\\
+ $\alpha(x-x_0) + \beta(y-y_0) + \gamma(z-z_0) = 0$
+\end{definition}
+\subsection{Соприкасающаяся плоскость}
+\begin{definition} $M_0, M_1, M_2$ точки на кривой $r(t)$\\
+Плоскость $(M_0, M_1, M_2)$ называется секущей плоскостью.
+Предельное положение $(M_0, M_1, M_2)$ при $M_1, M,2 \rightarrow M_0$ называется соприкасающейся плоскостью в точке $M_0$.
+\end{definition}
+\begin{definition} Точка $M_0 = r(t_0)$ называется бирегулярной, если $r'(t_0) \nparallel r''(t_0)$
+\end{definition}
+\end{document}
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help 

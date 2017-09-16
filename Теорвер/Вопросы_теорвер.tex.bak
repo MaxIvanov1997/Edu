@@ -1,0 +1,54 @@
+\documentclass[11pt]{report}
+
+\usepackage[cp1251]{inputenc} % указать кодировку русского текста
+\usepackage[russian]{babel} % указать, что язык текста - русский
+\usepackage{amsmath} % указать, что язык текста - русский
+\usepackage{amsthm}
+\usepackage{amsfonts,amssymb}
+\usepackage{graphicx}
+
+
+\hoffset -10mm
+\voffset -7mm
+\let\rom=\textup
+
+\makeatletter
+\def\@makechapterhead#1{%
+    {\normalfont
+\bfseries\par\nobreak\vskip 10\p@}}
+\makeatother
+
+\newtheorem*{theorem}{ Теорема}
+\newtheorem*{proposition}{Предложение}
+\newtheorem*{lemma}{Лемма}
+\newtheorem*{corollary}{Следствие}
+\newtheorem*{definition}{Определение}
+\newtheorem{qst}{Вопрос}
+\newtheorem*{task}{Задача}
+\newtheorem*{notation}{Обозначения}
+\newtheorem*{remark}{Замечание}
+\newtheorem*{example}{Пример}
+
+\begin{document}
+\title {Вопросы для проверки, Теория вероятностей}
+\author{Борисов Игорь Семенович} %\thanks{Место для мыла}
+\date{2017}
+\maketitle
+\noindent
+\chapter{}
+\begin{qst} Сформулируйте определение всемирного закона стабилизации частот \end{qst}
+\begin{qst} Определите модель классической вероятности. \end{qst}
+\begin{qst} Определите модель дискретной вероятности. \end{qst}
+\begin{qst} Определите модель геометрической вероятности. \end{qst}
+\begin{qst} Аксиоматика Колмогорова \end{qst}
+\begin{qst} Принцип умножения. \end{qst}
+\begin{qst} Гипергеометрическое распределение. \end{qst}
+\begin{qst} Условная вероятность. \end{qst}
+\begin{qst} Независимые события (Для 2 и для совокупности из n событий). \end{qst}
+\begin{qst} Пример Бернштейна. \end{qst}
+\begin{qst} Формула полной вероятности (вывод). \end{qst}
+\begin{qst} Формула Байеса (вывод). \end{qst}
+\begin{qst} Апостериорная вероятность. \end{qst}
+\begin{qst} Априорная вероятность. \end{qst}
+
+\end{document} 
